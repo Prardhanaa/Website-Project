@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Savoury Secrets — Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="images/logo.jpg" alt="Savory Secrets logo" class="logo" />
+        <span class="brand-name">Savory Secrets</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="recipes.html" class="nav-link">Recipes</a>
+        <a href="contact.html" class="nav-link btn-ghost">Contact</a>
+      </nav>
+      <button class="hamburger" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Discover the heart of Indian cooking</h1>
+          <p>Classic recipes, detailed instructions, and beautiful food photography — curated for home cooks.</p>
+          <a href="recipes.html" class="btn-primary">See All Recipes</a>
+        </div>
+        <figure class="hero-figure">
+          <img src="images/butter_chicken.jpg" alt="Butter Chicken" />
+          <figcaption>Butter Chicken — savory, creamy, unforgettable.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="container featured">
+      <h2>Featured Recipes</h2>
+      <div class="grid cards">
+        <!-- Card 1 -->
+        <article class="card">
+          <figure>
+            <img src="images/biriyani.jpg" alt="Biryani" />
+            <figcaption>Hyderabadi Biryani</figcaption>
+          </figure>
+          <div class="card-body">
+            <h3>Hyderabadi Biryani</h3>
+            <p>Fragrant layered rice with tender marinated meat and spices.</p>
+            <a href="recipes.html#biriyani" class="btn-link">Read Recipe →</a>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card">
+          <figure>
+            <img src="images/palak_paneer.jpg" alt="Palak Paneer" />
+            <figcaption>Palak Paneer</figcaption>
+          </figure>
+          <div class="card-body">
+            <h3>Palak Paneer</h3>
+            <p>Silky spinach gravy with cubes of paneer — nutritious and delicious.</p>
+            <a href="recipes.html#palak-paneer" class="btn-link">Read Recipe →</a>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card">
+          <figure>
+            <img src="images/masala_dosa.jpg" alt="Masala Dosa" />
+            <figcaption>Masala Dosa</figcaption>
+          </figure>
+          <div class="card-body">
+            <h3>Masala Dosa</h3>
+            <p>Crisp rice crepe filled with spiced potato masala.</p>
+            <a href="recipes.html#masala-dosa" class="btn-link">Read Recipe →</a>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="card">
+          <figure>
+            <img src="images/chole.jpg" alt="Chole" />
+            <figcaption>Chole</figcaption>
+          </figure>
+          <div class="card-body">
+            <h3>Chole (Chickpea Curry)</h3>
+            <p>Hearty, tangy chickpea curry perfect with bhature or rice.</p>
+            <a href="recipes.html#chole" class="btn-link">Read Recipe →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="container categories">
+      <h2>Explore Categories</h2>
+      <div class="category-grid">
+        <a href="recipes.html#main-course" class="chip">Main Course</a>
+        <a href="recipes.html#breakfast" class="chip">Breakfast</a>
+        <a href="recipes.html#snacks" class="chip">Snacks</a>
+        <a href="recipes.html#dessert" class="chip">Desserts</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Savory Secrets</h3>
+        <p>Classic Indian recipes made approachable.</p>
+      </div>
+      <nav>
+        <a href="index.html">Home</a> · <a href="recipes.html">Recipes</a> · <a href="contact.html">Contact</a>
+      </nav>
+      <small>© <span id="year"></span> Savory Secrets</small>
+    </div>
+  </footer>
+
+  <script>
+    // small script for year and responsive nav
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const btn = document.querySelector('.hamburger');
+    const nav = document.querySelector('.nav');
+    btn.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

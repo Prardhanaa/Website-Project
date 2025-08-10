@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Savoury Secrets — Contact</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="images/logo.jpg" alt="Savory Secrets logo" class="logo" />
+        <span class="brand-name">Savory Secrets</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="recipes.html" class="nav-link">Recipes</a>
+        <a href="contact.html" class="nav-link btn-ghost">Contact</a>
+      </nav>
+      <button class="hamburger" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </header>
+
+  <main class="container contact-page">
+    <h1>Contact</h1>
+    <p>Have feedback or a recipe to share? Send a message below.</p>
+
+    <form class="contact-form" action="#" method="post" onsubmit="alert('This is a demo contact form. No messages are sent.'); return false;">
+      <label>
+        <span>Name</span>
+        <input type="text" name="name" required />
+      </label>
+      <label>
+        <span>Email</span>
+        <input type="email" name="email" required />
+      </label>
+      <label>
+        <span>Message</span>
+        <textarea name="message" rows="6" required></textarea>
+      </label>
+      <button type="submit" class="btn-primary">Send Message</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Savory Secrets</h3>
+        <p>Classic Indian recipes made approachable.</p>
+      </div>
+      <nav>
+        <a href="index.html">Home</a> · <a href="recipes.html">Recipes</a> · <a href="contact.html">Contact</a>
+      </nav>
+      <small>© <span id="year3"></span> Savory Secrets</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year3').textContent = new Date().getFullYear();
+    document.querySelector('.hamburger').addEventListener('click', () => {
+      document.querySelector('.nav').classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
