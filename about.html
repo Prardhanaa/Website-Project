@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us - Waves & Wonders</title>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #fff9f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Header */
+header {
+    background: white;
+    padding: 20px 0;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+
+    font-family: 'Pacifico', cursive;
+    font-size: 1.8rem;
+    color: #e66b2e;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #777;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+nav a.active {
+    color: #e66b2e;
+}
+
+nav a:hover {
+    color: #e66b2e;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem 0;
+}
+
+.about img {
+    flex: 1 1 300px;
+    max-width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(230, 107, 46, 0.2);
+}
+
+.about-content {
+    flex: 2 1 500px;
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #e66b2e;
+    margin-bottom: 1rem;
+}
+
+.about-content p {
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+    color: #444;
+}
+
+/* Discover Section */
+.discover {
+    background: #ffece0;
+    padding: 2rem;
+    border-radius: 12px;
+    margin: 2rem 0;
+}
+
+.discover h3 {
+    color: #e66b2e;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.discover ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.discover li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+/* Collaborate Section */
+.collaborate {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.collaborate h3 {
+    color: #e66b2e;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    background: #e66b2e;
+    color: white;
+    padding: 0.8rem 1.6rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #cc5c20;
+}
+
+/* Footer */
+footer {
+    background: white;
+    border-top: 1px solid #f1f1f1;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+footer p {
+    color: #555;
+    font-size: 0.95rem;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="container header-content">
+        <h1 class="logo">Waves & Wonders</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="container about">
+   <img src="images/maya.jpg" alt="Maya - Founder" />
+
+    <div class="about-content">
+        <h2>Hi, I'm Maya</h2>
+        <p>I’m the voice behind <strong>Waves & Wonders</strong>, a space where stories, guides, and visual journals come together to celebrate the magic of meaningful travel.</p>
+        <p>From the aroma of fresh bread in a sleepy coastal town to the dazzling colors of a sunrise market, I write to preserve the quiet moments that make journeys unforgettable.</p>
+        <p>Here, you’ll find inspiration for slow travel, authentic experiences, and practical tips you can trust.</p>
+    </div>
+</div>
+
+<div class="container discover">
+    <h3>What You’ll Discover Here</h3>
+    <ul>
+        <li>📷 Curated photo destination guides</li>
+        <li>🗺️ Well-researched travel itineraries</li>
+        <li>🎒 Smart packing tips & budget-friendly advice</li>
+    </ul>
+</div>
+
+<div class="container collaborate">
+    <h3>Let’s Collaborate</h3>
+    <p>If you’re a brand, fellow traveler, or storyteller — let’s work together to create something beautiful.</p>
+    <a href="contact.html" class="btn">Get in Touch</a>
+</div>
+
+<footer>
+    <div class="container">
+        <strong>Waves & Wonders</strong>
+        <p>Travel stories, guides & adventures — built with HTML &amp; CSS.</p>
+    </div>
+</footer>
+
+</body>
+</html>

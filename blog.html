@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog - Waves & Wonders</title>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #fff6f1; /* soft peach */
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Header */
+header {
+    background: white;
+    padding: 20px 0;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.8rem;
+    color: #ff7b54; /* orange accent */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #777;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+nav a.active {
+    color: #ff7b54; /* orange accent */
+}
+
+nav a:hover {
+    color: #ff7b54;
+}
+
+/* Blog Section */
+main {
+    padding: 2rem 0;
+}
+
+main h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ff7b54; /* orange title */
+}
+
+.subtitle {
+    color: #777;
+    margin-bottom: 2rem;
+}
+
+/* Blog Cards */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.blog-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(255, 123, 84, 0.2);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+}
+
+.blog-card-content {
+    padding: 1rem;
+    flex: 1;
+}
+
+.blog-card-content h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+    color: #ff7b54; /* orange heading */
+}
+
+.blog-meta {
+    font-size: 0.85rem;
+    color: #999;
+    margin-bottom: 0.8rem;
+}
+
+.blog-card-content p {
+    font-size: 0.95rem;
+    margin-bottom: 0.8rem;
+}
+
+.read-more {
+    color: #ff7b54; /* orange link */
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: white;
+    border-top: 1px solid #f1f1f1;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+footer p {
+    color: #555;
+    font-size: 0.95rem;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="container header-content">
+        <h1 class="logo">Waves & Wonders</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <h2>Blog</h2>
+    <p class="subtitle">Latest guides, photo essays and travel tips.</p>
+
+    <div class="blog-grid">
+        <!-- Card 1 -->
+        <div class="blog-card">
+            <img src="images/balilast.jpeg" alt="Bali">
+            <div class="blog-card-content">
+                <h3>48 Hours in Bali</h3>
+                <div class="blog-meta">June 12, 2025 · 6 min read</div>
+                <p>Quick itinerary with beaches, temples and cafes for a short trip.</p>
+                <a href="bali.html" class="read-more">Continue reading →</a>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="blog-card">
+            <img src="images/picnic.jpeg" alt="Picnic">
+            <div class="blog-card-content">
+                <h3>Best Picnic Spots on the Coast</h3>
+                <div class="blog-meta">May 04, 2025 · 4 min read</div>
+                <p>A list of secret coves and easy lunch ideas for a day out.</p>
+                <a href="picnic.html" class="read-more">Continue reading →</a>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="blog-card">
+            <img src="images/download.jpeg" alt="Packing">
+            <div class="blog-card-content">
+                <h3>Packing Light: My Capsule List</h3>
+                <div class="blog-meta">March 18, 2025 · 5 min read</div>
+                <p>How to pack for two weeks in a carry-on bag.</p>
+                <a href="packing.html" class="read-more">Continue reading →</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <strong>Waves & Wonders</strong>
+        <p>travell travel nd TRAVELLL</p>
+    </div>
+</footer>
+
+</body>
+</html>
